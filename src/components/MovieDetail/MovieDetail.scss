@@ -1,0 +1,63 @@
+@import "../../common/color.scss";
+
+.detail {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 40px 0px;
+    color: $font-primary;
+    font-weight: 400;
+    .detail__left {
+        .detail__left__title {
+            color: $font-secondary;
+            font-size: 40px;
+            font-weight: 700;
+            letter-spacing: 1px;
+        }
+        .detail__left__ratings {
+            padding-left: 3px;
+            margin-top: 5px;
+            color: $font-tertiary;
+            display: flex;
+            span {
+                display: flex;
+                align-items: center;
+                justify-items: center;
+                margin-right: 20px;
+                font-size: 13px;
+                img {
+                    height: 17px;
+                    margin-left: 4px;
+                }
+            }
+        }
+        .detail__left__plot {
+            margin-top: 20px;
+            line-height: 1.8rem;
+        }
+        .detail__left__info {
+            div span:first-child {
+                padding: 10px 0px;
+                font-weight: 500;
+                width: 100px;
+                display: inline-block;
+                color: $font-primary;
+            }
+        }
+        .detail__left__info {
+            div span {
+                color: $font-tertiary;
+            }
+        }
+    }
+    .detail__right {
+        margin-left: 30px;
+    }
+}
+
+@media only screen and (max-width: 776px) {
+    .detail {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+  }

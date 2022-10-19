@@ -1,0 +1,21 @@
+@import "../../common/color.scss";
+
+.movie-wrapper {
+    height: 100%;
+    .movie-wrapper__movie-list, .movie-wrapper__show-list{
+        margin: 20px 0px;
+        h2 {
+            color: $font-secondary;
+            margin-bottom: 10px;
+        }
+        // .movie-wrapper__movie-list__movie-container, .movie-wrapper__show-list__show-container {
+        //     display: grid;
+        //     grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+        //     grid-gap: 15px;
+        // }
+    }
+
+}
+.movies-error {
+    color: $font-primary;
+}
